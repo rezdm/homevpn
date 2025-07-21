@@ -1,0 +1,14 @@
+# homeVPN Configuration File
+# Place this file at ~/.homeVPN
+
+# VPN Connection Commands
+vpn_connect="sudo wg-quick up wgzg0"
+vpn_disconnect="sudo wg-quick down wgzg0"
+
+# Network Mount Commands
+mount_cmd="sudo mount -t cifs -o ..."
+unmount_cmd="sudo umount -f ..."
+
+# IP Check Configuration
+check_ip_url="https://ipinfo.io/ip"
+expected_ip="987.654.32.1"
